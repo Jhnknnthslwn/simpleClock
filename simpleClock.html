@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Simple Clock | GreatStack </title>
+		<link rel="stylesheet" href="simpleClockStyle.css">
+	</head>
+	<body>
+		<div class="bg">
+			<div class="img-blr">
+				<img src="https://i.pinimg.com/originals/9a/ed/34/9aed34863af3fdfecd110b1909a30736.gif">
+			</div>
+			<div class="container">
+				<img src="https://i.pinimg.com/originals/9a/ed/34/9aed34863af3fdfecd110b1909a30736.gif">
+				<h2 id="title">Current Time</h2>
+				<h1 id="current-time"></h1>
+					<div class="quotes">
+						<p>TODAY'S QUOTE</p>
+						<h2>Death isn't the ruthless, time is</h2>
+					</div>
+			</div>
+		</div>
+		<!-- Javascript for Setting Time -->
+		<script>
+			let time = document.getElementById("current-time");
+			setInterval(() =>{
+				let date = new Date();
+				time.innerHTML = date.toLocaleTimeString();
+			},1000)
+		</script>
+		
+	</body>
+</html>
